@@ -82,10 +82,9 @@ h2 {
     gap: 1.5rem;
   }
   ul {
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   /* start hamburger menu */
@@ -110,10 +109,15 @@ h2 {
     position: fixed;
     transition: translate var(--animation-timing), transform 0.2s;
     translate: 100%;
+    /* padding + 6rem is optional */
     padding: calc(
-        2 * (var(--hamburger-height) + var(--hamburger-margin) + 1rem)
+        (
+          6rem + (2 * (var(--hamburger-height))) + var(--hamburger-margin) +
+            1rem
+        )
       )
       2rem;
+
     top: 0;
     right: 0;
     background-color: var(--side-menu-color);
