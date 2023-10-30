@@ -1,7 +1,7 @@
 const sidebar = document.querySelector(".side-bar");
 const sidebarOverlay = document.querySelector(".side-bar-overlay");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 95) {
     // console.log("down");
     sidebar.classList.add("side-bar--hidden");
     sidebarOverlay.classList.add("side-bar--hidden");
